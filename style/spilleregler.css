@@ -1,0 +1,52 @@
+/* spilleregler page*/
+
+.content_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.inner {
+  width: 300px;
+  padding: 1%;
+  margin: 2%;
+  overflow: hidden;
+  border: 1px solid white;
+  line-height: 1.5;
+  border-radius: 5%;
+  box-shadow: 10px 10px 0px 0px rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgba(100, 149, 237);
+}
+
+.inner span {
+  text-align: left;
+  font-weight: bolder;
+  font-size: 1.5em;
+  padding: 3%;
+}
+
+.inner hr {
+  height: 3px;
+  border: none;
+  background-color: rgba(100, 149, 237, 0.7);
+  margin: 1%;
+}
+
+.inner p {
+  text-align: center;
+  padding: 3%;
+}
+.inner:nth-child(1) img {
+  width: 15%;
+}
+
+.inner:nth-child(2) img {
+  filter: grayscale(50%) brightness(1);
+  width: 15%;
+  margin: 0% 0% 3% 3%;
+}
+
+.inner:nth-child(3) img {
+  width: 80%;
+}

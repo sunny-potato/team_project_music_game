@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/spill.css" />
+    <link rel="shortcut icon" href="#" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <title>Spill</title>
+  </head>
+  <body class="background_pattern">
+    <div class="fullpage_container">
+      <!--Navigation bar-->
+      <div class="navbar">
+        <li>
+          <a href="index.html">
+            <img src="src/website/nav_icon.png" alt="Navigation icon"
+          /></a>
+        </li>
+        <li><a href="spill.html">Spill</a></li>
+        <li><a href="spilleregler.html">Spilleregler</a></li>
+        <li><a href="omOss.html">Om oss </a></li>
+      </div>
+
+      <!--Swiper-->
+      <div class="swiper_container">
+        <!--using Swiperjs libary from CDN https://swiperjs.com/get-started-->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div>
+                Tutorial
+                <p>Musikk : Monday Night Monsters Soundtrack - Game On!</p>
+                <div>
+                  <p>
+                    Bruk knapper <img src=./src/website/buttons.png alt="buttons
+                    used in the game">
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                Bane 1
+                <p>Musikk : KCFM - Rickroll But It's Lofi</p>
+                <div>
+                  <p>
+                    Bruk knapper <img src=./src/website/buttons.png alt="buttons
+                    used in the game">
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                Bane 2
+                <p>Musikk : MemesWithFire - Dance Till You're Dead</p>
+                <div>
+                  <p>
+                    Bruk knapper <img src=./src/website/buttons.png alt="buttons
+                    used in the game">
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                Bane 3
+                <p>
+                  Musikk : Camellia - We Could Get More Machinegun Psystyle!
+                </p>
+                <div>
+                  <p>
+                    Bruk knapper <img src=./src/website/buttons.png alt="buttons
+                    used in the game">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--pagination and buttons for swiper-->
+        <div class="buttons_pagination_container">
+          <div class="swiper-pagination"></div>
+          <div class="buttons">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-play">
+              <img
+                id="play_button"
+                src="./src/website/play_button.png"
+                alt="play button"
+              />
+            </div>
+            <div class="swiper-button-stop">
+              <img
+                id="stop_button"
+                src="./src/website//stop_button.png"
+                alt="stop button"
+              />
+            </div>
+            <div class="swiper-button-next"></div>
+            <!--using Swiperjs libary from CDN https://swiperjs.com/get-started -->
+          </div>
+        </div>
+      </div>
+
+      <!--Swiper(JS)-->
+      <script src="js/swiper.js"></script>
+
+      <script>
+        // choose level
+        var banesend;
+        var baner = ["Tutorial", "Bane 1", "Bane 2", "Bane 3"];
+
+        // play game with playbutton
+        let playButton = document.getElementById("play_button");
+        playButton.onclick = () => {
+          const activeSlide =
+            document.getElementsByClassName("swiper-slide")[swiper.activeIndex];
+          addGameToslide(activeSlide);
+        };
+
+        // stop game with stopbutton
+        let stopButton = document.getElementById("stop_button");
+        stopButton.onclick = () => {
+          document.location.reload();
+        };
+      </script>
+
+      <script src="./js/test_bane_display.js"></script>
+    </div>
+  </body>
+</html>

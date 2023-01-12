@@ -1,0 +1,89 @@
+/* Spill page*/
+
+/* swiper*/
+.fullpage_container {
+  display: flex;
+}
+
+/* spill page - form of swiper*/
+.swiper_container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2%;
+}
+.swiper {
+  min-height: 600px;
+}
+.swiper-wrapper {
+  width: 1000px;
+}
+.swiper-slide {
+  border-radius: 30px;
+  background-color: rgba(100, 149, 237, 0.7);
+  color: #fff;
+  opacity: 0.1;
+}
+
+.swiper-slide div {
+  width: 100%;
+  font-size: 3em;
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.swiper-slide div img {
+  width: 80%;
+  padding: 5%;
+}
+
+.swiper-slide-active {
+  opacity: 0.5;
+}
+
+/*  spill page  - create buttons for swiper*/
+.buttons_pagination_container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.swiper-pagination {
+  position: static;
+  filter: grayscale(100%) brightness(3);
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.buttons div {
+  margin: 1%;
+}
+.buttons div:hover {
+  transform: scale(1.1);
+}
+.buttons div:active {
+  box-shadow: 0 0 10px #fff;
+  transform: scale(0.9);
+}
+.buttons img {
+  width: 44px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+  margin-top: 0%;
+  filter: grayscale(100%) brightness(3);
+}
+.swiper-button-play,
+.swiper-button-stop {
+  width: 44px;
+  filter: grayscale(100%) brightness(3);
+  cursor: pointer;
+}
