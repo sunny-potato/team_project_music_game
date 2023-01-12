@@ -9,7 +9,7 @@ This music game is to follow rhythm by beating icons coming down from the top of
 
 ### Link
 
-- Link to the game -> [music game](https://musicgame-sunhee.netlify.app/spill.html)
+- Link to the game -> [music game](https://musicgame-sunhee.netlify.app/index.html)
 - preview of the game
   ![](music_game.gif)
 
