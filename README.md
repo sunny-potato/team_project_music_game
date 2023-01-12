@@ -9,8 +9,9 @@ This music game is to follow rhythm by beating icons coming down from the top of
 
 ### Link
 
-- Link to the game ![]
-- preview of the game
+- Link to the game -> [music game](link)
+- preview of the game 
+![](gif)
 
 ### Features
 
